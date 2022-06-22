@@ -43,6 +43,29 @@ body{
 }
 /* end clear -fix */
 
+/* golobol */
+.section-center{
+    padding: 4rem 0;
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.section-subtitle{
+    font-size: 2rem;
+    letter-spacing: var(--letterSpacing);
+    font-family: var(--macondoText);
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+
+}
+
+.section-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+/* end of golobol */
+
 
 
 
@@ -212,12 +235,6 @@ background: linear-gradient(to left,var(--primaryColor),var(--secondaryColor),va
     }
 }
 /* about */
-.section-center{
-    padding: 4rem 0;
-    width: 80vw;
-    max-width: 1170px;
-    margin: 0 auto;
-}
 .about-img, .about-info{
     padding: 2rem 0;
     
@@ -239,19 +256,7 @@ background: linear-gradient(to left,var(--primaryColor),var(--secondaryColor),va
     opacity: 7;
     transform: scale(1.2);
 }
-.section-subtitle{
-    font-size: 2rem;
-    letter-spacing: var(--letterSpacing);
-    font-family: var(--macondoText);
-    text-transform: uppercase;
-    color: var(--secondaryColor);
 
-}
-
-.section-title{
-    font-size: 3rem;
-    text-transform: uppercase;
-}
 .about-tex{
     margin: 1rem 0;
     max-width: 26rem;
@@ -266,4 +271,72 @@ background: linear-gradient(to left,var(--primaryColor),var(--secondaryColor),va
 
 
 /* end about */
+
+/* products */
+.products{
+    background: var(--mainDark);
+}
+.products-info .product-invontry{
+    padding: 2rem 0;
+}
+.products-text{
+    color: var(--mainWhite);
+    max-width: 20rem;
+    margin: 1rem 0;
+}
+.product{
+    padding: 2rem 0;
+}
+.product-img{
+    width: 100%;
+    display: block;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem ;
+}
+.product-title{
+    color: var(--mainWhite);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+}
+.product-price{
+    color: var(--secondaryColor);
+    letter-spacing: var(--letterSpacing);
+    text-transform: uppercase;
+    font-family: var(--macondoText);
+
+}
+@media screen and (min-width:768px) {
+    .products-info{
+        float: left;
+        width: 50%;
+        padding: 2rem 1rem;
+    }
+    .about-info{
+        padding: 2rem 1rem;
+        width: 30%;
+        float: left;
+    }
+}
+@media screen and (min-width:992px) {
+    .product{
+        width: 33.3%;
+    }
+
+}
+@media screen and (min-width:1200px) {
+    .product-invontry{
+        float: left;
+        width: 70%;
+
+    }
+    ..product{
+        padding: 1.5rem 1rem 0 1rem;
+    }
+   
+}
+
+
+    
+
+/* end of products */
   
